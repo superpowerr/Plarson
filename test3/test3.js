@@ -4,7 +4,6 @@ function pre(any) {
 		if (document.readyState === 'interactive') {
 			any();
 			document.addEventListener('DOMContentLoaded', () => {
-				any();
 			}); 
 		} else {
 			postFunc();
