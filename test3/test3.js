@@ -5,8 +5,8 @@ function pre(any) {
 			any();
 			document.addEventListener('DOMContentLoaded', () => {
 			}); 
-		} else {
-			postFunc();
+		} else {	
+			document.onload = postFunc();
 		}
 	})
 }
